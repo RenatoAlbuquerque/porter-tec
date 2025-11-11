@@ -1,0 +1,2 @@
+echo "📝 Validando mensagem do commit..."
+npx commitlint --edit "$1"
