@@ -33,9 +33,11 @@
       "TableUser": {
         "TitleTableHeader": "Lista de Usuários Cadastrados",
         "NotFoundUsers": "Nenhum usuário encontrado.",
+        "NotFavoritesUsers": "Nenhum favorito encontrado",
         "ErrorTitle": "Erro ao carregar usuários. Tente novamente.",
+        "ErrorSubtitle": "Clique em Recarregar no cabeçalho.",
         "ErrorSubitle": "Clique em Recarregar no cabeçalho.",
-        "ErrorAlert": " Falha ao atualizar os dados — exibindo resultados em cache.",
+        "ErrorAlert": "Falha ao atualizar os dados — exibindo resultados em cache.",
         "Columns": {
           "id": "ID",
           "avatar": "Avatar",
@@ -46,18 +48,23 @@
           "country": "País",
           "cellphone": "Celular",
           "favorite": "Favorito"
-        }
+        },
+        "FilterByNationalityLabel": "Filtrar por nacionalidade",
+        "FilterByNationalityPlaceholder": "Digite a sigla da nacionalidade, ex: (BR, US, FR, DE, NL, AU)",
+        "FilterButton": "Filtrar",
+        "ShowAllButton": "Mostrar todos",
+        "ShowFavoritesButton": "Mostrar favoritos"
       }
     }
   },
   "Features": {
     "HomePage": {
-      "TitleInfoRegister": "Informações dos últimos 1000 Registros.",
+      "TitleInfoRegister": "Informações dos últimos 1000 registros.",
       "TitleCards": {
         "TopByCountry": "Top por País",
         "UsersHigh65": "Usuários +65",
-        "Men": "Homem",
-        "Women": "Mulher",
+        "Men": "Homens",
+        "Women": "Mulheres",
         "RefetchTooltip": "Refazer a consulta de dados"
       }
     },

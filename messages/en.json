@@ -25,7 +25,7 @@
     },
     "Molecules": {
       "UserMenu": {
-        "MyPerfil": "My Perfil",
+        "MyPerfil": "My Profile",
         "Exit": "Exit"
       }
     },
@@ -33,8 +33,10 @@
       "TableUser": {
         "TitleTableHeader": "User List Registered",
         "NotFoundUsers": "Not found users...",
+        "NotFavoritesUsers": "Not favorites users...",
         "ErrorTitle": "Failed to load users. Please try again.",
         "ErrorSubtitle": "Click Reload in the header.",
+        "ErrorSubitle": "Click Reload in the header.",
         "ErrorAlert": "Failed to update data — showing cached results.",
         "Columns": {
           "id": "ID",
@@ -46,19 +48,24 @@
           "country": "Country",
           "cellphone": "Cellphone",
           "favorite": "Favorite"
-        }
+        },
+        "FilterByNationalityLabel": "Filter by nationality",
+        "FilterByNationalityPlaceholder": "Enter the nationality code, e.g.: (BR, US, FR, DE, NL, AU)",
+        "FilterButton": "Filter",
+        "ShowAllButton": "Show all",
+        "ShowFavoritesButton": "Show favorites"
       }
     }
   },
   "Features": {
     "HomePage": {
-      "TitleInfoRegister": "Information last 1000 Register.",
+      "TitleInfoRegister": "Information of the last 1000 registrations.",
       "TitleCards": {
         "TopByCountry": "Top by Country",
-        "UsersHigh65": "Users High +65",
+        "UsersHigh65": "Users Aged 65+",
         "Men": "Men",
         "Women": "Women",
-        "RefetchTooltip": "Refetch data query"
+        "RefetchTooltip": "Refetch data"
       }
     },
     "UserPage": {
