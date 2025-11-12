@@ -1,1 +1,39 @@
-{}
+{
+  "SideNavTitles": {
+    "Dashboard": "Painel",
+    "Users": "Usuários",
+    "UsersFavorites": "Favoritos",
+    "Pricing": "Preços",
+    "Integration": "Integrações",
+    "By": "Por"
+  },
+  "Components": {
+    "Atoms": {
+      "CardInfoUsers": {
+        "ErrorLoading": "Erro no carregamento"
+      },
+      "LanguageSelector": {
+        "PtBr": "Português (Brasil)",
+        "EnUs": "Inglês (US)"
+      }
+    },
+    "Molecules": {
+      "UserMenu": {
+        "MyPerfil": "Meu Perfil",
+        "Exit": "Sair"
+      }
+    }
+  },
+  "Features": {
+    "HomePage": {
+      "TitleInfoRegister": "Informações dos últimos 1000 Registros.",
+      "TitleCards": {
+        "TopByCountry": "Top por País",
+        "UsersHigh65": "Usuários +65",
+        "Men": "Homem",
+        "Women": "Mulher",
+        "RefetchTooltip": "Refazer a consulta de dados"
+      }
+    }
+  }
+}

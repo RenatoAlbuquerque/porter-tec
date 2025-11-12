@@ -1,1 +1,39 @@
-{}
+{
+  "SideNavTitles": {
+    "Dashboard": "Dashboard",
+    "Users": "Users",
+    "UsersFavorites": "Users Favorites",
+    "Pricing": "Pricing",
+    "Integration": "Integration",
+    "By": "By"
+  },
+  "Components": {
+    "Atoms": {
+      "CardInfoUsers": {
+        "ErrorLoading": "Failed loading"
+      },
+      "LanguageSelector": {
+        "PtBr": "Portuguese (Brazil)",
+        "EnUs": "English (US)"
+      }
+    },
+    "Molecules": {
+      "UserMenu": {
+        "MyPerfil": "My Perfil",
+        "Exit": "Exit"
+      }
+    }
+  },
+  "Features": {
+    "HomePage": {
+      "TitleInfoRegister": "Information last 1000 Register.",
+      "TitleCards": {
+        "TopByCountry": "Top by Country",
+        "UsersHigh65": "Users High +65",
+        "Men": "Men",
+        "Women": "Women",
+        "RefetchTooltip": "Refetch data query"
+      }
+    }
+  }
+}

@@ -53,7 +53,6 @@ export const lightTheme = createTheme({
       dark: "#9A91FB",
       contrastText: "#FFFFFF",
     },
-
     secondary: {
       light: "#9A91FB",
       main: "#57C3FF",
