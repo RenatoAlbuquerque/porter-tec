@@ -51,7 +51,7 @@ export const FavoritesPageComponent = () => {
 
   return (
     <>
-      <Typography variant="h3" pb="30px">
+      <Typography variant="h3" py="30px">
         {translate("title")}
       </Typography>
       <SearchBar

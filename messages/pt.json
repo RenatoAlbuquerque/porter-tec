@@ -104,6 +104,11 @@
       },
       "loadingMore": "Carregando mais favoritos...",
       "noResults": "Nenhum favorito encontrado."
+    },
+    "UnderConstructionPage": {
+      "title": "Página em construção",
+      "description": "Estamos trabalhando para trazer essa funcionalidade em breve. 🚧",
+      "backButton": "Voltar"
     }
   }
 }

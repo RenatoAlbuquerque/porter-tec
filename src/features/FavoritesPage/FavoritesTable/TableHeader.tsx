@@ -19,20 +19,26 @@ export const TableHeader = ({ translate }: ITableHeaderProps) => (
           {translate("header.name")}
         </Box>
       </TableCell>
-      <TableCell align="right">
-        <Box display={"flex"} justifyContent={"flex-end"} alignItems={"center"} gap="10px">
+      <TableCell align="left">
+        <Box
+          display={"flex"}
+          justifyContent={"flex-start"}
+          alignItems={"center"}
+          gap="10px"
+          minWidth={100}
+        >
           <PhoneIphoneOutlinedIcon fontSize="small" />
           {translate("header.phone")}
         </Box>
       </TableCell>
       <TableCell align="right">
-        <Box display={"flex"} justifyContent={"flex-end"} alignItems={"center"} gap="10px">
+        <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} gap="10px">
           <WcOutlinedIcon fontSize="small" />
           {translate("header.gender")}
         </Box>
       </TableCell>
       <TableCell align="right">
-        <Box display={"flex"} justifyContent={"flex-end"} alignItems={"center"} gap="10px">
+        <Box display={"flex"} justifyContent={"flex-start"} alignItems={"center"} gap="10px">
           <LanguageOutlinedIcon fontSize="small" />
           {translate("header.country")}
         </Box>

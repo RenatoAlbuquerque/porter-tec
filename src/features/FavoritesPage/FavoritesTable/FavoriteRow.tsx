@@ -31,9 +31,9 @@ export const FavoriteRow = ({ row, onClick }: IFavoriteRow) => (
         </Box>
       </Box>
     </TableCell>
-    <TableCell align="right">{row.cellphone}</TableCell>
-    <TableCell align="right">{row.gender}</TableCell>
-    <TableCell align="right">{row.country}</TableCell>
+    <TableCell align="left">{row.cellphone}</TableCell>
+    <TableCell align="left">{row.gender}</TableCell>
+    <TableCell align="left">{row.country}</TableCell>
     <TableCell align="right">
       <Box>
         <FavoriteButton user={row} />

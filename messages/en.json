@@ -104,6 +104,11 @@
       },
       "loadingMore": "Loading more favorites...",
       "noResults": "No favorites found."
+    },
+    "UnderConstructionPage": {
+      "title": "Page under construction",
+      "description": "We're working hard to bring this feature soon. 🚧",
+      "backButton": "Go back"
     }
   }
 }

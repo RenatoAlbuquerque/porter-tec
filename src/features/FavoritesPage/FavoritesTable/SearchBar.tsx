@@ -9,7 +9,13 @@ interface ISearchBarProps {
 }
 
 export const SearchBar = ({ rawQuery, setRawQuery, resultsCount, translate }: ISearchBarProps) => (
-  <Box display="flex" gap={2} alignItems="center" mb={2}>
+  <Box
+    display="flex"
+    gap={2}
+    alignItems="center"
+    mb={2}
+    flexDirection={{ xs: "column", md: "row" }}
+  >
     <TextField
       label={translate("searchLabel")}
       size="small"
@@ -17,7 +23,8 @@ export const SearchBar = ({ rawQuery, setRawQuery, resultsCount, translate }: IS
       onChange={(e) => setRawQuery(e.target.value)}
       placeholder={translate("searchPlaceholder")}
       color="secondary"
-      sx={{ minWidth: 260 }}
+      sx={{ maxWidth: 300 }}
+      fullWidth
     />
     <Typography color="text.secondary">
       {resultsCount} {translate("results")}
