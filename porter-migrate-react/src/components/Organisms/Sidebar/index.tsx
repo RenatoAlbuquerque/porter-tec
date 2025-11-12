@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
 import IconButton from "@mui/material/IconButton";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
@@ -10,13 +9,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, Button } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import PorterLogo from "../../../assets/logo/porterLogoSmall.svg";
-import { useMenuList } from "@/constants/sidebarMenuList";
-import { useLocalePath } from "@/hooks/useLocalePath";
-import { useTranslations } from "next-intl";
-import { usePushNavigation } from "@/hooks/useNavigation";
-import { SettingsContext } from "@/context/settingsContext";
+import PorterLogo from "@/assets/logo/porterLogoSmall.svg";
+import { useMenuList } from "../../../constants/sidebarMenuList";
+import { useLocalePath } from "../../../hooks/useLocalePath";
+import { usePushNavigation } from "../../../hooks/useNavigation";
+import { SettingsContext } from "../../../context/settingsContext";
 import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
+import { useTranslations } from "../../../hooks/useTranslations";
 
 const COLLAPSED_WIDTH = 72;
 const EXPANDED_WIDTH = 300;
@@ -35,6 +34,7 @@ export default function SidebarDrawer() {
   const mobileOpen = Boolean(displaySideBar && isMobile);
 
   const translateSideNav = useTranslations("SideNavTitles");
+
   const pathname = useLocalePath();
   const menuList = useMenuList(translateSideNav);
   const pushNavigation = usePushNavigation();
@@ -83,7 +83,8 @@ export default function SidebarDrawer() {
         p={2}
       >
         <Box display="flex" alignItems="center" gap={1}>
-          {!collapsed && <img src={PorterLogo} alt="Logo Porter" style={{ width: 120, height: "auto" }} />}
+          {!collapsed && <img src={PorterLogo} alt="Logo Porter" style={{ width: 120, height: "auto" }} />
+          }
         </Box>
 
         {isMobile ? (
