@@ -22,7 +22,7 @@ export const Header = () => {
         <Image src={PorterLogo} alt="Logo Porter" />
       </Box>
       <IconButton
-        sx={{ position: "fixed", top: 0, marginLeft: "-12px", display: { xs: "flex", sm: "none" } }}
+        sx={{ position: "absolute", top: 0, mt: "20px", display: { xs: "flex", sm: "none" } }}
         onClick={handleMobileToggle}
         size="large"
         aria-label="abrir menu"

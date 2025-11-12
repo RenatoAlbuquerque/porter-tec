@@ -84,7 +84,7 @@ export interface TableUser {
   isPlaceholder?: boolean;
 }
 
-export const tableInformationUsers = (results: RandomUser[]): TableUser[] => {
+export const tableInformationUsers = (results?: RandomUser[]): TableUser[] => {
   if (!results) return [];
   return results.map((r, i) => ({
     id: r.login?.uuid ?? String(i),

@@ -60,6 +60,25 @@
         "Women": "Women",
         "RefetchTooltip": "Refetch data query"
       }
+    },
+    "UserPage": {
+      "userFavorite": "Favorite User",
+      "personalInformation": "Personal Information",
+      "locationInformation": "Location Information",
+      "fullName": "Full Name",
+      "username": "Username",
+      "email": "Email address",
+      "cellphone": "Cellphone",
+      "photo": "Photo",
+      "gender": "Gender",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "street": "Street",
+      "birthday": "Birthday",
+      "age": "Age",
+      "errorTitle": "Error retrieving user information",
+      "errorRetry": "Try again!"
     }
   }
 }

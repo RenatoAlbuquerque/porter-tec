@@ -60,6 +60,25 @@
         "Women": "Mulher",
         "RefetchTooltip": "Refazer a consulta de dados"
       }
+    },
+    "UserPage": {
+      "userFavorite": "Usuário Favorito",
+      "personalInformation": "Informações Pessoais",
+      "locationInformation": "Informações de Localização",
+      "fullName": "Nome Completo",
+      "username": "Nome de Usuário",
+      "email": "E-mail",
+      "cellphone": "Celular",
+      "photo": "Foto",
+      "gender": "Gênero",
+      "country": "País",
+      "state": "Estado",
+      "city": "Cidade",
+      "street": "Rua",
+      "birthday": "Data Nasc.",
+      "age": "Idade",
+      "errorTitle": "Erro ao recuperar as informações do usuário",
+      "errorRetry": "Tente novamente!"
     }
   }
 }

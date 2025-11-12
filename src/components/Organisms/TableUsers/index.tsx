@@ -21,7 +21,7 @@ export const TableUsers: React.FC = () => {
     pageSize: 10,
   });
   const {
-    palette: { primary },
+    palette: { primary, background },
   } = useTheme();
   const { data, isError, refetch, isPending, isRefetching } = useRandomUsers({
     results: paginationModel.pageSize,
@@ -96,6 +96,12 @@ export const TableUsers: React.FC = () => {
           cursor: "pointer",
           "& .MuiDataGrid-cell": {
             borderBottom: "1px solid #eee",
+          },
+          "& .MuiDataGrid-row:nth-of-type(odd)": {
+            backgroundColor: background.default,
+          },
+          "& .MuiDataGrid-row:hover": {
+            backgroundColor: primary.dark,
           },
         }}
       />

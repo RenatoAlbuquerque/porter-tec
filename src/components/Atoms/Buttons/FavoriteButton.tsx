@@ -10,14 +10,31 @@ import { TableUser } from "@/api/users/users.utils";
 import { useTranslations } from "next-intl";
 
 interface Props {
-  user: GridRenderCellParams<TableUser>;
+  user?: GridRenderCellParams<TableUser> | TableUser | null;
+  disabled?: boolean;
 }
 
-export const FavoriteButton: React.FC<Props> = ({ user }) => {
-  const currentUser = user.row as TableUser;
+export const FavoriteButton: React.FC<Props> = ({ user, disabled = false }) => {
+  const translateFavoriteBtn = useTranslations("Components.Atoms.Buttons.FavoriteButton");
   const { isFavorite, toggleFavorite } = useFavorites();
-  const translateButtonFavorites = useTranslations("Components.Atoms.Buttons.FavoriteButton");
-  const favorited = isFavorite(currentUser.id);
+
+  const currentUser: TableUser | null =
+    (user as GridRenderCellParams<TableUser>)?.row ?? (user as TableUser) ?? null;
+
+  if (!currentUser) {
+    return (
+      <Tooltip title={translateFavoriteBtn("NoUser") ?? ""}>
+        <span>
+          <IconButton size="small" disabled>
+            <StarBorderIcon fontSize="medium" />
+          </IconButton>
+        </span>
+      </Tooltip>
+    );
+  }
+
+  const userId = currentUser.id;
+  const favorited = isFavorite(userId);
 
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -26,19 +43,24 @@ export const FavoriteButton: React.FC<Props> = ({ user }) => {
 
   return (
     <Tooltip
-      title={
-        favorited ? translateButtonFavorites("RemoveFavs") : translateButtonFavorites("AddFavs")
-      }
+      title={favorited ? translateFavoriteBtn("RemoveFavs") : translateFavoriteBtn("AddFavs")}
     >
-      <IconButton size="small" onClick={handleClick}>
-        {favorited ? (
-          <StarIcon fontSize="medium" color="warning" />
-        ) : (
-          <StarBorderIcon fontSize="medium" color="warning" />
-        )}
-      </IconButton>
+      <span>
+        <IconButton
+          size="small"
+          onClick={handleClick}
+          disabled={disabled}
+          aria-label={
+            favorited ? translateFavoriteBtn("RemoveFavs") : translateFavoriteBtn("AddFavs")
+          }
+        >
+          {favorited ? (
+            <StarIcon fontSize="medium" color="warning" />
+          ) : (
+            <StarBorderIcon fontSize="medium" color="warning" />
+          )}
+        </IconButton>
+      </span>
     </Tooltip>
   );
 };
-
-export default FavoriteButton;

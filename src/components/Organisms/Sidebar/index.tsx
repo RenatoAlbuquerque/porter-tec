@@ -11,13 +11,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, Button } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import MenuIcon from "@mui/icons-material/Menu";
 import PorterLogo from "@/assets/logo/porterLogoSmall.svg";
 import { useMenuList } from "@/constants/sidebarMenuList";
 import { useLocalePath } from "@/hooks/useLocalePath";
 import { useTranslations } from "next-intl";
 import { usePushNavigation } from "@/hooks/useNavigation";
 import { SettingsContext } from "@/context/settingsContext";
+import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 
 const COLLAPSED_WIDTH = 72;
 const EXPANDED_WIDTH = 300;
@@ -89,7 +89,7 @@ export default function SidebarDrawer() {
 
         {isMobile ? (
           <IconButton onClick={handleMobileToggle} size="large" aria-label="abrir menu">
-            <MenuIcon htmlColor={primary.contrastText} />
+            <MenuOpenOutlinedIcon htmlColor={primary.contrastText} />
           </IconButton>
         ) : (
           <Tooltip title={collapsed ? "Expandir" : "Encolher"}>

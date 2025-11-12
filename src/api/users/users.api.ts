@@ -11,11 +11,17 @@ export interface RandomUserParams {
   inc?: string;
   exc?: string;
   format?: "json" | "pretty" | "csv" | "yaml" | "xml";
+  id?: string;
 }
 
 export const fetchRandomUsers = async (
   params: RandomUserParams = {},
 ): Promise<RandomUserResponse> => {
-  const { data } = await api.get<RandomUserResponse>("/", { params });
+  const { data } = await api.get<RandomUserResponse>("/", {
+    params: {
+      ...params,
+      seed: "foobar",
+    },
+  });
   return data;
 };

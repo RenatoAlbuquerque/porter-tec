@@ -80,7 +80,7 @@ export default function useFavorites() {
     window.dispatchEvent(new Event(UPDATE_EVENT));
   }, []);
 
-  const isFavorite = useCallback((id: string) => favorites.some((u) => u.id === id), [favorites]);
+  const isFavorite = useCallback((id: string) => favorites.find((u) => u.id === id), [favorites]);
 
   const clearFavorites = useCallback(() => {
     try {
