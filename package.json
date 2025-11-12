@@ -2,6 +2,12 @@
   "name": "porter-tec",
   "version": "0.1.0",
   "private": true,
+  "description": "Porter Dash — Painel administrativo de usuários e favoritos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RenatoAlbuquerque/porter-tec"
+  },
+  "author": "Renato Albuquerque",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
@@ -37,9 +43,7 @@
     "next-intl": "^4.3.12",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-hook-form": "^7.65.0",
-    "react-toastify": "^11.0.5",
-    "yup": "^1.7.1"
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
