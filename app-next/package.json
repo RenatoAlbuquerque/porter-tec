@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
+    "start": "next start -p 3000",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",

@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  next:
+    build:
+      context: ./app-next
+      dockerfile: Dockerfile
+    image: porter-tec-next:latest
+    container_name: porter-tec-next
+    ports:
+      - "3000:3000"  
+    environment:
+      - NODE_ENV=production
+  
+    restart: unless-stopped
+
+  react:
+    build:
+      context: ./app-react
+      dockerfile: Dockerfile
+    image: porter-tec-react:latest
+    container_name: porter-tec-react
+    ports:
+      - "5173:80"     
+    restart: unless-stopped
