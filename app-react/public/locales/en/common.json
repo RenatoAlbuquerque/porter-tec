@@ -1,0 +1,114 @@
+{
+  "SideNavTitles": {
+    "Dashboard": "Dashboard",
+    "Users": "Users",
+    "UsersFavorites": "Users Favorites",
+    "Pricing": "Pricing",
+    "Integration": "Integration",
+    "By": "By"
+  },
+  "Components": {
+    "Atoms": {
+      "Buttons": {
+        "FavoriteButton": {
+          "RemoveFavs": "Remove Favorite",
+          "AddFavs": "Add Favorite"
+        }
+      },
+      "CardInfoUsers": {
+        "ErrorLoading": "Failed loading"
+      },
+      "LanguageSelector": {
+        "PtBr": "Portuguese (Brazil)",
+        "EnUs": "English (US)"
+      }
+    },
+    "Molecules": {
+      "UserMenu": {
+        "MyPerfil": "My Profile",
+        "Exit": "Exit"
+      }
+    },
+    "Organism": {
+      "TableUser": {
+        "TitleTableHeader": "User List Registered",
+        "NotFoundUsers": "Not found users...",
+        "NotFavoritesUsers": "Not favorites users...",
+        "ErrorTitle": "Failed to load users. Please try again.",
+        "ErrorSubtitle": "Click Reload in the header.",
+        "ErrorSubitle": "Click Reload in the header.",
+        "ErrorAlert": "Failed to update data — showing cached results.",
+        "Columns": {
+          "id": "ID",
+          "avatar": "Avatar",
+          "name": "Name",
+          "gender": "Gender",
+          "email": "E-mail",
+          "birthday": "Birthday",
+          "country": "Country",
+          "cellphone": "Cellphone",
+          "favorite": "Favorite"
+        },
+        "FilterByNationalityLabel": "Filter by nationality",
+        "FilterByNationalityPlaceholder": "Enter the nationality code, e.g.: (BR, US, FR, DE, NL, AU)",
+        "FilterButton": "Filter",
+        "ShowAllButton": "Show all",
+        "ShowFavoritesButton": "Show favorites"
+      }
+    }
+  },
+  "Features": {
+    "HomePage": {
+      "TitleInfoRegister": "Information of the last 1000 registrations.",
+      "TitleCards": {
+        "TopByCountry": "Top by Country",
+        "UsersHigh65": "Users Aged 65+",
+        "Men": "Men",
+        "Women": "Women",
+        "RefetchTooltip": "Refetch data"
+      }
+    },
+    "UserPage": {
+      "userFavorite": "Favorite User",
+      "personalInformation": "Personal Information",
+      "locationInformation": "Location Information",
+      "fullName": "Full Name",
+      "username": "Username",
+      "email": "Email address",
+      "cellphone": "Cellphone",
+      "photo": "Photo",
+      "gender": "Gender",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "street": "Street",
+      "birthday": "Birthday",
+      "age": "Age",
+      "errorTitle": "Error retrieving user information",
+      "errorRetry": "Try again!"
+    },
+    "FavoritesPage": {
+      "title": "Favorites List",
+      "emptyHeading": "You haven't added any favorites yet",
+      "emptyDescription": "Click the favorite button on the users screen to add someone to your favorites.",
+      "searchLabel": "Search favorites",
+      "searchPlaceholder": "Name, Email or Country",
+      "results": "Result(s)",
+      "tableAria": "Favorites table",
+      "header": {
+        "name": "Name",
+        "phone": "Phone",
+        "gender": "Gender",
+        "country": "Country",
+        "favorite": "Favorite"
+      },
+      "loadingMore": "Loading more favorites...",
+      "noResults": "No favorites found."
+    },
+    "UnderConstructionPage": {
+      "title": "Page under construction",
+      "description": "We're working hard to bring this feature soon. 🚧",
+      "backButton": "Go back"
+    }
+  }
+}

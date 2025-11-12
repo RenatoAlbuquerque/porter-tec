@@ -1,0 +1,114 @@
+{
+  "SideNavTitles": {
+    "Dashboard": "Painel",
+    "Users": "Usuários",
+    "UsersFavorites": "Favoritos",
+    "Pricing": "Preços",
+    "Integration": "Integrações",
+    "By": "Por"
+  },
+  "Components": {
+    "Atoms": {
+      "Buttons": {
+        "FavoriteButton": {
+          "RemoveFavs": "Remover dos favoritos",
+          "AddFavs": "Adicionar aos favoritos"
+        }
+      },
+      "CardInfoUsers": {
+        "ErrorLoading": "Erro no carregamento"
+      },
+      "LanguageSelector": {
+        "PtBr": "Português (Brasil)",
+        "EnUs": "Inglês (US)"
+      }
+    },
+    "Molecules": {
+      "UserMenu": {
+        "MyPerfil": "Meu Perfil",
+        "Exit": "Sair"
+      }
+    },
+    "Organism": {
+      "TableUser": {
+        "TitleTableHeader": "Lista de Usuários Cadastrados",
+        "NotFoundUsers": "Nenhum usuário encontrado.",
+        "NotFavoritesUsers": "Nenhum favorito encontrado",
+        "ErrorTitle": "Erro ao carregar usuários. Tente novamente.",
+        "ErrorSubtitle": "Clique em Recarregar no cabeçalho.",
+        "ErrorSubitle": "Clique em Recarregar no cabeçalho.",
+        "ErrorAlert": "Falha ao atualizar os dados — exibindo resultados em cache.",
+        "Columns": {
+          "id": "ID",
+          "avatar": "Avatar",
+          "name": "Nome",
+          "gender": "Gênero",
+          "email": "E-mail",
+          "birthday": "Nascimento",
+          "country": "País",
+          "cellphone": "Celular",
+          "favorite": "Favorito"
+        },
+        "FilterByNationalityLabel": "Filtrar por nacionalidade",
+        "FilterByNationalityPlaceholder": "Digite a sigla da nacionalidade, ex: (BR, US, FR, DE, NL, AU)",
+        "FilterButton": "Filtrar",
+        "ShowAllButton": "Mostrar todos",
+        "ShowFavoritesButton": "Mostrar favoritos"
+      }
+    }
+  },
+  "Features": {
+    "HomePage": {
+      "TitleInfoRegister": "Informações dos últimos 1000 registros.",
+      "TitleCards": {
+        "TopByCountry": "Top por País",
+        "UsersHigh65": "Usuários +65",
+        "Men": "Homens",
+        "Women": "Mulheres",
+        "RefetchTooltip": "Refazer a consulta de dados"
+      }
+    },
+    "UserPage": {
+      "userFavorite": "Usuário Favorito",
+      "personalInformation": "Informações Pessoais",
+      "locationInformation": "Informações de Localização",
+      "fullName": "Nome Completo",
+      "username": "Nome de Usuário",
+      "email": "E-mail",
+      "cellphone": "Celular",
+      "photo": "Foto",
+      "gender": "Gênero",
+      "country": "País",
+      "state": "Estado",
+      "city": "Cidade",
+      "street": "Rua",
+      "birthday": "Data Nasc.",
+      "age": "Idade",
+      "errorTitle": "Erro ao recuperar as informações do usuário",
+      "errorRetry": "Tente novamente!"
+    },
+    "FavoritesPage": {
+      "title": "Lista de Favoritos",
+      "emptyHeading": "Você ainda não adicionou favoritos",
+      "emptyDescription": "Clique no botão de favoritar na tela de usuários para adicioná-lo aos favoritos.",
+      "searchLabel": "Pesquisar favoritos",
+      "searchPlaceholder": "Nome, E-mail ou País",
+      "results": "Resultado(s)",
+      "tableAria": "Tabela de favoritos",
+      "header": {
+        "name": "Nome",
+        "phone": "Telefone",
+        "gender": "Gênero",
+        "country": "País",
+        "favorite": "Favorito"
+      },
+      "loadingMore": "Carregando mais favoritos...",
+      "noResults": "Nenhum favorito encontrado."
+    },
+    "UnderConstructionPage": {
+      "title": "Página em construção",
+      "description": "Estamos trabalhando para trazer essa funcionalidade em breve. 🚧",
+      "backButton": "Voltar"
+    }
+  }
+}

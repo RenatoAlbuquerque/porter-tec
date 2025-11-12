@@ -1,3 +1,5 @@
+
+"use client"
 import React, { useContext } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -10,7 +12,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, Button } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import PorterLogo from "../../../assets/logo/porterLogoSmall.svg";
+import PorterLogo from "@/assets/logo/porterLogoSmall.svg";
 import { useMenuList } from "@/constants/sidebarMenuList";
 import { useLocalePath } from "@/hooks/useLocalePath";
 import { useTranslations } from "next-intl";
@@ -83,7 +85,7 @@ export default function SidebarDrawer() {
         p={2}
       >
         <Box display="flex" alignItems="center" gap={1}>
-          {!collapsed && <img src={PorterLogo} alt="Logo Porter" style={{ width: 120, height: "auto" }} />}
+          {!collapsed && <Image src={PorterLogo} alt="Logo Porter" />}
         </Box>
 
         {isMobile ? (

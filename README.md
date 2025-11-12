@@ -77,6 +77,7 @@ git clone https://github.com/RenatoAlbuquerque/porter-tec.git
 
 # Acessar o diretório
 cd porter-tec
+cd app-next
 
 # Instalar dependências
 npm install
@@ -95,7 +96,7 @@ git clone https://github.com/RenatoAlbuquerque/porter-tec.git
 
 # Acessar o diretório
 cd porter-tec
-cd porter-migrate-react
+cd app-react
 
 # Instalar dependências
 npm install
