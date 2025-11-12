@@ -2,6 +2,8 @@
 
 > Projeto desenvolvido como parte de um **Desafio Técnico de Frontend Sênior**, utilizando **React (Next.js 15)**, **Material UI**, **React Query** e **TypeScript**.
 
+> O Projeto pode ser acessado tanto como **React** como **Next**, ambos estão documentados de como serem reproduzidos, todos os diferenciais técnicos se encontram no projeto **React**.
+
 ---
 
 ## 🧱 Sumário
@@ -67,7 +69,7 @@ Funcionalidades principais:
 - Node.js >= 20
 - npm >= 9
 
-### Instalação
+### Instalação e Acesso Next
 
 ```bash
 # Clonar o repositório
@@ -83,6 +85,25 @@ npm install
 npm run dev
 
 #A aplicação estará disponível em http://localhost:3000
+```
+
+### Instalação e Acesso React
+
+```bash
+# Clonar o repositório
+git clone https://github.com/RenatoAlbuquerque/porter-tec.git
+
+# Acessar o diretório
+cd porter-tec
+cd porter-migrate-react
+
+# Instalar dependências
+npm install
+
+# Rodar o Projeto
+npm run dev
+
+#A aplicação estará disponível em http://localhost:5173/
 ```
 
 ### 👨‍💻 Autor
