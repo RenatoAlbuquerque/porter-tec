@@ -23,13 +23,11 @@ export const FavoriteButton: React.FC<Props> = ({ user, disabled = false }) => {
 
   if (!currentUser) {
     return (
-      <Tooltip title={translateFavoriteBtn("NoUser") ?? ""}>
-        <span>
-          <IconButton size="small" disabled>
-            <StarBorderIcon fontSize="medium" />
-          </IconButton>
-        </span>
-      </Tooltip>
+      <span>
+        <IconButton size="small" disabled>
+          <StarBorderIcon fontSize="medium" />
+        </IconButton>
+      </span>
     );
   }
 

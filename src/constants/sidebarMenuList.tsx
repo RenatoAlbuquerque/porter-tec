@@ -36,7 +36,7 @@ export const useMenuList = (t: (key: string) => string) => {
         id: "btn_features",
         name: t("UsersFavorites"),
         icon: <StarBorderOutlinedIcon />,
-        path: "/construction",
+        path: "/favorites",
       },
       {
         id: "btn_pricing",

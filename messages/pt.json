@@ -79,6 +79,24 @@
       "age": "Idade",
       "errorTitle": "Erro ao recuperar as informações do usuário",
       "errorRetry": "Tente novamente!"
+    },
+    "FavoritesPage": {
+      "title": "Lista de Favoritos",
+      "emptyHeading": "Você ainda não adicionou favoritos",
+      "emptyDescription": "Clique no botão de favoritar na tela de usuários para adicioná-lo aos favoritos.",
+      "searchLabel": "Pesquisar favoritos",
+      "searchPlaceholder": "Nome, E-mail ou País",
+      "results": "Resultado(s)",
+      "tableAria": "Tabela de favoritos",
+      "header": {
+        "name": "Nome",
+        "phone": "Telefone",
+        "gender": "Gênero",
+        "country": "País",
+        "favorite": "Favorito"
+      },
+      "loadingMore": "Carregando mais favoritos...",
+      "noResults": "Nenhum favorito encontrado."
     }
   }
 }

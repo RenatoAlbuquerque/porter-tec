@@ -79,6 +79,24 @@
       "age": "Age",
       "errorTitle": "Error retrieving user information",
       "errorRetry": "Try again!"
+    },
+    "FavoritesPage": {
+      "title": "Favorites List",
+      "emptyHeading": "You haven't added any favorites yet",
+      "emptyDescription": "Click the favorite button on the users screen to add someone to your favorites.",
+      "searchLabel": "Search favorites",
+      "searchPlaceholder": "Name, Email or Country",
+      "results": "Result(s)",
+      "tableAria": "Favorites table",
+      "header": {
+        "name": "Name",
+        "phone": "Phone",
+        "gender": "Gender",
+        "country": "Country",
+        "favorite": "Favorite"
+      },
+      "loadingMore": "Loading more favorites...",
+      "noResults": "No favorites found."
     }
   }
 }
