@@ -9,6 +9,12 @@
   },
   "Components": {
     "Atoms": {
+      "Buttons": {
+        "FavoriteButton": {
+          "RemoveFavs": "Remove Favorite",
+          "AddFavs": "Add Favorite"
+        }
+      },
       "CardInfoUsers": {
         "ErrorLoading": "Failed loading"
       },
@@ -21,6 +27,26 @@
       "UserMenu": {
         "MyPerfil": "My Perfil",
         "Exit": "Exit"
+      }
+    },
+    "Organism": {
+      "TableUser": {
+        "TitleTableHeader": "User List Registered",
+        "NotFoundUsers": "Not found users...",
+        "ErrorTitle": "Failed to load users. Please try again.",
+        "ErrorSubtitle": "Click Reload in the header.",
+        "ErrorAlert": "Failed to update data — showing cached results.",
+        "Columns": {
+          "id": "ID",
+          "avatar": "Avatar",
+          "name": "Name",
+          "gender": "Gender",
+          "email": "E-mail",
+          "birthday": "Birthday",
+          "country": "Country",
+          "cellphone": "Cellphone",
+          "favorite": "Favorite"
+        }
       }
     }
   },

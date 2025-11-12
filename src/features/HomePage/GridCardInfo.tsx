@@ -53,7 +53,12 @@ export const GridCardInfo = () => {
   ];
 
   return (
-    <Grid container spacing={{ xs: 1 }} my={{ xs: "20px", md: "45px", lg: "80px" }}>
+    <Grid
+      container
+      spacing={{ xs: 1 }}
+      mt={{ xs: "20px", md: "30px", lg: "40px" }}
+      mb={{ xs: "25px" }}
+    >
       <Grid size={{ xs: 12 }}>
         <Box display="flex" width="100%" justifyContent="space-between" alignItems="center">
           <Typography variant="h3">{translateGridCard("TitleInfoRegister")}</Typography>

@@ -9,6 +9,12 @@
   },
   "Components": {
     "Atoms": {
+      "Buttons": {
+        "FavoriteButton": {
+          "RemoveFavs": "Remover dos favoritos",
+          "AddFavs": "Adicionar aos favoritos"
+        }
+      },
       "CardInfoUsers": {
         "ErrorLoading": "Erro no carregamento"
       },
@@ -21,6 +27,26 @@
       "UserMenu": {
         "MyPerfil": "Meu Perfil",
         "Exit": "Sair"
+      }
+    },
+    "Organism": {
+      "TableUser": {
+        "TitleTableHeader": "Lista de Usuários Cadastrados",
+        "NotFoundUsers": "Nenhum usuário encontrado.",
+        "ErrorTitle": "Erro ao carregar usuários. Tente novamente.",
+        "ErrorSubitle": "Clique em Recarregar no cabeçalho.",
+        "ErrorAlert": " Falha ao atualizar os dados — exibindo resultados em cache.",
+        "Columns": {
+          "id": "ID",
+          "avatar": "Avatar",
+          "name": "Nome",
+          "gender": "Gênero",
+          "email": "E-mail",
+          "birthday": "Nascimento",
+          "country": "País",
+          "cellphone": "Celular",
+          "favorite": "Favorito"
+        }
       }
     }
   },

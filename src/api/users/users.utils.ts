@@ -1,4 +1,4 @@
-import { RandomUserResponse } from "./users.types";
+import { RandomUser, RandomUserResponse } from "./users.types";
 
 export interface UserMetrics {
   total: number;
@@ -69,4 +69,32 @@ export const calculateUserMetrics = (data: RandomUserResponse): UserMetrics => {
     maleCount,
     femaleCount,
   };
+};
+
+export interface TableUser {
+  id: string;
+  name: string;
+  gender: string;
+  email: string;
+  dateBirthday: string;
+  country: string;
+  cellphone: string;
+  picture: string;
+  favorite: boolean;
+  isPlaceholder?: boolean;
+}
+
+export const tableInformationUsers = (results: RandomUser[]): TableUser[] => {
+  if (!results) return [];
+  return results.map((r, i) => ({
+    id: r.login?.uuid ?? String(i),
+    name: `${r.name?.first ?? ""} ${r.name?.last ?? ""}`.trim(),
+    gender: r.gender ?? "",
+    email: r.email ?? "",
+    dateBirthday: r.dob?.date ? new Date(r.dob.date).toLocaleDateString() : "",
+    country: r.location?.country ?? "",
+    cellphone: r.cell ?? "",
+    picture: r.picture?.thumbnail ?? "",
+    favorite: false,
+  }));
 };
