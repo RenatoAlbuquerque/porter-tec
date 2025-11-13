@@ -44,6 +44,18 @@ Funcionalidades principais:
 - Baseado em **Material UI v7**, com customização leve via tema e `sx` props.
 - CSS-in-JS nativo do MUI (`@emotion/styled`).
 
+### 📝 Justificativa de escolhas e Funcionamentos
+- **React Context**
+  - Nativo do próprio React, simples implementação e ideal para pequenas aplicações sem tanta complexidade já que previamente sabemos que a aplicação é limitada globalmente, assim só seria necessário utilizar contexto global para temas, loading, filtros e listas.
+- **Persistência de favoritos**
+  - Como foi solicitado no desafio técnico foi utilizado o próprio localStorage do navegador para implementação dos favoritos, foi criado o hook useFavorites para manipular tudo que envolve favoritos.
+  - Os favoritos são persistidos usando a chave favorite_users_v1. O hook useFavorites inicializa seu estado a partir do localStorage, serializa (JSON.stringify) ao salvar e desserializa com parsing seguro ao ler. Para garantir sincronização entre abas e atualizações dentro da mesma aba, o hook escuta o evento nativo storage e também emite/escuta um evento customizado (favorite_users_updated_v1) — assim a lista de favoritos fica atualizada em todas as instâncias da aplicação. O hook também expõe funções claras como:
+    - addFavorite(user) — Adiciona se não existir;
+    - removeFavorite(id) — remove por id;
+    - toggleFavorite(user) — Adiciona ou Remove;
+    - isFavorite(id) — Consulta rápida;
+    - clearFavorites() — Limpa tudo.
+
 ### 🌍 Internacionalização (i18n)
 - Implementada com **next-intl** e **i18n**.
 - Estrutura de mensagens no app-next em`messages/en.json` e `messages/pt.json` e no app-react em `locales/{lang}/common.js`.
