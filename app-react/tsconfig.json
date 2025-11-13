@@ -9,6 +9,11 @@
     }
   ],
   "compilerOptions": {
+    "types": [
+      "vitest/globals",
+      "@testing-library/jest-dom",
+      "node"
+    ],
     "baseUrl": "./src",
     "paths": {
       "@/*": [

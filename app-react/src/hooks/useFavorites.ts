@@ -1,5 +1,3 @@
-"use client";
-
 import { useCallback, useEffect, useState } from "react";
 import type { TableUser } from "../api/users/users.utils";
 

@@ -1,4 +1,3 @@
-// src/hooks/useLocalePath.ts
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
