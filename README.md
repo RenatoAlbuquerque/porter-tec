@@ -50,7 +50,10 @@ Funcionalidades principais:
 
 ### 🌍 Escolha da API
 - A API utilizadada foi a **randomuser** devido a sua grande quantidade de dados e disponibilidade, podendo fazer requisição até de 1000 usuários, nela podemos obtermos diversas informações do usuário e realizar vários filtros para sua utilização.
+-**Alerta** Ela possui uma limitação para fazer filtros de um único usuário então precisou ser adaptada, mesmo passando o parâmetro na consulta é feito um filtro dos usuários que estão em cachê para retornar o com usuário com o mesmo UUID da rota, assim como é feito quando a API possui filtro.
 - Toda a estrutura de tipagem dela pode ser conferida em `src/api/users/users.types.ts` .
+
+
 
 ### 🧭 Organização
 - **Atomic Design** adaptado:
