@@ -26,10 +26,14 @@ import { useDayjsFormatter } from "../../hooks/useDayjsFormatter";
 import { useTranslations } from "../../hooks/useTranslations";
 import { tableInformationUsers } from "../../api/users/users.utils";
 import { FavoriteButton } from "../../components/Atoms/Buttons/FavoriteButton";
-import { useRandomUsers } from "../../api/users";
+import { useGraphQLUserById } from "../../hooks/useGraphqlUser";
+
 export const UserPageComponent = ({ idUser }: { idUser: string }) => {
-  const { data, isError, isPending, refetch } = useRandomUsers({ id: idUser });
-  const userData = data?.results[0];
+  const { user, isError, isPending, refetch, } = useGraphQLUserById(idUser, {
+    seed: "foobar",
+  });
+  const userData = user
+
   const {
     palette: { primary, background, secondary },
   } = useTheme();

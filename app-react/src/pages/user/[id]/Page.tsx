@@ -3,7 +3,7 @@ import { TemplateSidebarHeaderComponent } from "../../../components/Template/Sid
 import { UserPageComponent } from "../../../features/UserPage";
 
 export default function UserPage() {
-  const { id } = useParams<{ id: string }>(); // pega o parâmetro da rota /user/:id
+  const { id } = useParams<{ id: string }>();
 
   return (
     <TemplateSidebarHeaderComponent>
