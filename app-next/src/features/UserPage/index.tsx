@@ -31,8 +31,10 @@ import { tableInformationUsers } from "@/api/users/users.utils";
 import { FavoriteButton } from "@/components/Atoms/Buttons/FavoriteButton";
 
 export const UserPageComponent = ({ idUser }: { idUser: string }) => {
-  const { data, isError, isPending, refetch } = useRandomUsers({ id: idUser });
-  const userData = data?.results[0];
+  const { data, isError, isPending, refetch } = useRandomUsers({ id: idUser, results: 1000 });
+  const filterUser = data?.results.filter((user) => user.login.uuid === idUser);
+  const userData = filterUser?.[0]
+
   const {
     palette: { primary, background, secondary },
   } = useTheme();
