@@ -1,6 +1,6 @@
 # ⚡ Porter Dash — Painel Administrativo de Usuários e Favoritos
 
-> Projeto desenvolvido como parte de um **Desafio Técnico de Frontend Sênior**, utilizando **React (Next.js 15)**, **Material UI**, **React Query** e **TypeScript**.
+> Projeto desenvolvido como parte de um **Desafio Técnico de Frontend Sênior**, utilizando **React e Next.js 15**, **Material UI**, **React Query** e **TypeScript**.
 
 > O Projeto pode ser acessado tanto como **React** como **Next**, ambos estão documentados de como serem reproduzidos.
 
@@ -23,17 +23,17 @@ Funcionalidades principais:
 - Tela de **detalhamento do usuário** com informações adicionais (telefone, gênero, país, idade);
 - **Favoritar / desfavoritar** usuários com persistência local (`localStorage`);
 - **Tela exclusiva** de usuários favoritos com scroll infinito;
-- **Filtros por nome** e **por favoritos**;
+- **Filtros por nome** na tela de favoritos e **por favoritos** e **nacionalidade** na tela de usuárops;
 - **Feedback visual** (loading, mensagens e ícones);
-- **Internacionalização** (português e inglês via `next-intl`).
+- **Internacionalização** (português e inglês via `next-intl` e `i18n`).
 
 ---
 
 ## 🧠 Arquitetura e Decisões Técnicas
 
 ### 🧩 Framework e Estrutura
-- Utilizado **Next.js (App Router)** pela estrutura moderna, otimização e suporte nativo a Server/Client Components.
-- Separação entre **Server Components** (metadados, SSR) e **Client Components** (componentes interativos com hooks).
+- Utilizado no app-next **Next.js (App Router)** pela estrutura moderna, otimização e suporte nativo a Server/Client Components e separação entre **Server Components** (metadados, SSR) e **Client Components** (componentes interativos com hooks)
+- Utilizado no react-app **React 18 com Vite** que oferece inicialização e recarga rápida, eliminando tempo de espera e gerando builds otimizados.
 
 ### ⚙️ State Management
 - Utilizado **React Query (`@tanstack/react-query`)** para gerenciamento de cache e estado assíncrono.
@@ -45,12 +45,12 @@ Funcionalidades principais:
 - CSS-in-JS nativo do MUI (`@emotion/styled`).
 
 ### 🌍 Internacionalização (i18n)
-- Implementada com **next-intl**.
-- Estrutura de mensagens em `messages/en.json` e `messages/pt.json`.
+- Implementada com **next-intl** e **i18n**.
+- Estrutura de mensagens no app-next em`messages/en.json` e `messages/pt.json` e no app-react em `locales/{lang}/common.js`.
 
 ### 🌍 Escolha da API
-- A API utilizadada foi a **randomuser** devido a sua grande quantidade de dados e disponibilidade, podendo fazer requisição até de 1000 usuários, nela podemos obtermos diversas informações do usuário e realizar vários filtros para sua utilização.
--**Alerta** Ela possui uma limitação para fazer filtros de um único usuário então precisou ser adaptada, mesmo passando o parâmetro na consulta é feito um filtro dos usuários que estão em cachê para retornar o com usuário com o mesmo UUID da rota, assim como é feito quando a API possui filtro.
+- A API utilizadada foi a **randomuser** devido a sua grande quantidade de dados e disponibilidade, podendo fazer requisição até de 1000 usuários, nela podemos obter diversas informações do usuário e realizar vários filtros para sua utilização.
+- **Alerta** Ela possui uma limitação para fazer filtros de um único usuário então precisou ser adaptada, mesmo passando o parâmetro na consulta é feito um filtro dos usuários que estão em cachê para retornar o usuário com o mesmo UUID da rota, assim como é feito quando a API possui filtro.
 - Toda a estrutura de tipagem dela pode ser conferida em `src/api/users/users.types.ts` .
 
 
@@ -65,8 +65,7 @@ Funcionalidades principais:
 - Requisições encapsuladas em `src/api/`.
 
 ### ⚛️ Utilização do GraphQL (Exclusivo aplicação React) 
-- No projeto foi utilizando GraphQL com Apollo Client para adaptar a chamada da API na tela de detalhes do usuário, os dados foram manipulados para trazer apenas o necessário para renderização de informações na tela, abaixo é possível vê a diferença entre os retornos da requisição original e modificada.
-  - Rota da tela na aplicação: **/user/{id}**
+- No projeto foi utilizando GraphQL com Apollo Client para adaptar a chamada da API na tela de detalhes do usuário, os dados foram manipulados para trazer apenas o necessário para renderização de informações na tela, abaixo é possível ver a diferença entre os retornos da requisição original e modificada.
   - Rota da tela na aplicação: **/user/{id}**
 
 ![Comparação Graphql](comparacao-graphql.png)
@@ -95,7 +94,7 @@ A stack de testes foi configurada para permitir testes de hooks como useFavorite
 git clone https://github.com/RenatoAlbuquerque/porter-tec.git
 
 # Acessar o diretório
-cd porter-tec
+cd app-next
 
 # Instalar dependências
 npm install
@@ -114,19 +113,17 @@ npm start
 git clone https://github.com/RenatoAlbuquerque/porter-tec.git
 
 # Acessar o diretório
-cd porter-tec
-cd porter-migrate-react
+cd app-react
 
 # Instalar dependências
 npm install
 
 # Rodar o Projeto
+npm run build
 npm run preview
 
 #A aplicação estará disponível em http://localhost:5173/
 ```
-
-#A aplicação estará disponível em http://localhost:3000
 
 ### Acesso aos projetos via Docker-compose
 
