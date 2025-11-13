@@ -61,6 +61,14 @@ Funcionalidades principais:
   - **Template:** estrutura geral (sidebar + header).
 - Requisições encapsuladas em `src/api/`.
 
+### ⚛️ Utilização do GraphQL (Exclusivo aplicação React) 
+- No projeto foi utilizando GraphQL com Apollo Client para adaptar a chamada da API na tela de detalhes do usuário, os dados foram manipulados para trazer apenas o necessário para renderização de informações na tela, abaixo é possível vê a diferença entre os retornos da requisição original e modificada.
+  - Rota da tela na aplicação: **/user/{id}**
+  - Rota da tela na aplicação: **/user/{id}**
+
+![Comparação Graphql](comparacao-graphql.png)
+
+
 ### 🧪 Testes (Exclusivo aplicação React) 
 - O projeto utiliza Vitest para testes unitários e de hooks, com suporte ao React Testing Library.
 A stack de testes foi configurada para permitir testes de hooks como useFavorites, componentes isolados e helpers da aplicação.
